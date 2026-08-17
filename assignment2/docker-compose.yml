@@ -1,0 +1,10 @@
+services:
+  meridian:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: meridian-world-clock:latest
+    container_name: meridian-world-clock
+    ports:
+      - "8080:80"
+    restart: unless-stopped
