@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Electricity Bill Calculator</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>⚡ Electricity Bill Calculator</h1>
+        <p class="subtitle">Enter your consumption details to compute your bill</p>
+
+        <form action="CalculateBill" method="post">
+            <label for="name">Consumer Name</label>
+            <input type="text" id="name" name="name" placeholder="e.g. Rahul Sharma">
+
+            <label for="units">Units Consumed (kWh)</label>
+            <input type="number" id="units" name="units" min="0" step="any" required placeholder="e.g. 220">
+
+            <button type="submit">Calculate Bill</button>
+        </form>
+
+        <div class="slab-info">
+            <h3>Tariff Slabs</h3>
+            <table>
+                <tr><th>Consumption</th><th>Rate</th></tr>
+                <tr><td>First 50 units</td><td>Rs. 3.50 / unit</td></tr>
+                <tr><td>Next 100 units (51–150)</td><td>Rs. 4.00 / unit</td></tr>
+                <tr><td>Next 100 units (151–250)</td><td>Rs. 5.20 / unit</td></tr>
+                <tr><td>Above 250 units</td><td>Rs. 6.50 / unit</td></tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
