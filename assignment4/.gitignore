@@ -1,0 +1,6 @@
+﻿target/
+nbproject/private/
+*.class
+*.log
+.nb-gradle/
+nb-configuration.xml
