@@ -1,0 +1,1 @@
+export default function Footer(){return <footer><div><strong>BookNest</strong><p>A better place for your next great read.</p></div><div><b>Explore</b><p>Fiction · Business · Self Help · History</p></div><div><b>Built with</b><p>React + TypeScript · Spring Boot · MongoDB</p></div></footer>}
